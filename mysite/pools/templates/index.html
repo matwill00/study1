@@ -6,52 +6,13 @@
     <title>{% block title %}GEARS DYNAMICS{% endblock %}</title>
     <link rel="stylesheet" type="text/css" href="{% static 'pools/css/style_main.css' %}">
 </head>
-<svg display="none">
-    <symbol viewBox="0 0 24 24" id="gear">
-        <path fill-rule="evenodd" d="M20.8733438,18.6798456 L18.6561681,20.8970213 L15.8183182,20.1064695
-        L15.006735,20.4411839 L13.5498403,22.99899 L10.4152664,22.99899 L8.96643872,20.4324639
-        L8.15567513,20.0925211 L5.31808752,20.8732969 L3.1019687,18.6571781 L3.89252047,15.8193282
-        L3.557737,15.0075774 L1,13.5496234 L1,10.4151434 L3.56757573,8.96634421 L3.90747891,8.15567513
-        L3.12670306,5.31808752 L5.34198234,3.10280823 L8.17984769,3.89446381 L8.99071892,3.56004309 L10.4454387,1
-        L13.5808166,1 L15.0296158,3.56757573 L15.8402849,3.90747891 L18.6774046,3.12683179 L20.8961418,5.34235339
-        L20.1054595,8.18067182 L20.4399569,8.99172892 L23,10.4464487 L23,13.5818266 L20.4326665,15.0304891
-        L20.0924686,15.8429951 L20.8733438,18.6798456 Z M17.9808573,15.7077573 L18.8526582,13.6256062 L21,12.4139314
-        L21,11.6103133 L18.8534478,10.3905557 L17.9941264,8.30695569 L18.6558226,5.93165934 L18.0869626,5.36362372
-        L15.7044076,6.01919516 L13.6244596,5.14709956 L12.4129214,3 L11.6093033,3 L10.3895457,5.1465522 L8.30575983,6.00595029
-        L5.93001038,5.34320732 L5.36375245,5.90946526 L6.01919516,8.29155242 L5.14709956,10.3715004 L3,11.5830386 L3,12.3875547
-        L5.14481829,13.610138 L6.00385363,15.6930443 L5.34202685,18.0688091 L5.90946526,18.6362476 L8.29155242,17.9808048
-       L10.3714059,18.8528608 L11.5829156,20.99899 L12.3873378,20.99899 L13.6089604,18.8542408 L15.6920343,17.9951364
-       L18.0677992,18.6569631 L18.6362007,18.0885616 L17.9808573,15.7077573 Z M12,16 C9.790861,16 8,14.209139 8,12
-       C8,9.790861 9.790861,8 12,8 C14.209139,8 16,9.790861 16,12 C16,14.209139 14.209139,16 12,16 Z M12,14
-       C13.1045695,14 14,13.1045695 14,12 C14,10.8954305 13.1045695,10 12,10 C10.8954305,10 10,10.8954305 10,12 C10,13.1045695 10.8954305,14 12,14 Z"></path>
-    </symbol>
-    <symbol viewBox="0 0 240.1 240.1" id="tg">
-        <g id="Artboard">
-
-            <linearGradient id="Oval_1_" gradientUnits="userSpaceOnUse" x1="-838.041" y1="660.581" x2="-838.041"
-                            y2="660.3427" gradientTransform="matrix(1000 0 0 -1000 838161 660581)">
-                <stop offset="0" style="stop-color:#2AABEE"></stop>
-                <stop offset="1" style="stop-color:#229ED9"></stop>
-            </linearGradient>
-            <circle id="Oval" fill-rule="evenodd" clip-rule="evenodd" fill="url(#Oval_1_)" cx="120.1" cy="120.1"
-                    r="120.1"></circle>
-            <path id="Path-3" fill-rule="evenodd" clip-rule="evenodd" fill="#FFFFFF" d="M54.3,118.8c35-15.2,58.3-25.3,70-30.2
-		c33.3-13.9,40.3-16.3,44.8-16.4c1,0,3.2,0.2,4.7,1.4c1.2,1,1.5,2.3,1.7,3.3s0.4,3.1,0.2,4.7c-1.8,19-9.6,65.1-13.6,86.3
-		c-1.7,9-5,12-8.2,12.3c-7,0.6-12.3-4.6-19-9c-10.6-6.9-16.5-11.2-26.8-18c-11.9-7.8-4.2-12.1,2.6-19.1c1.8-1.8,32.5-29.8,33.1-32.3
-		c0.1-0.3,0.1-1.5-0.6-2.1c-0.7-0.6-1.7-0.4-2.5-0.2c-1.1,0.2-17.9,11.4-50.6,33.5c-4.8,3.3-9.1,4.9-13,4.8
-		c-4.3-0.1-12.5-2.4-18.7-4.4c-7.5-2.4-13.5-3.7-13-7.9C45.7,123.3,48.7,121.1,54.3,118.8z"></path>
-        </g>
-    </symbol>
-</svg>
 <header class="header">
-    <svg class="icon">
-        <use href="#gear"></use>
-    </svg>
+    <img src="{% static 'pools/svg/gear-custom.svg' %}" class="icon">
     <h1 class="Name">GEARS DYNAMICS</h1>
     <div class="headers1">
         <span class="headers">Создание</span>
         <div class="headers_hover"><p class="headers_content">
-            <img src="{% static 'pools/img/ангар.jpg' %}" alt="" width="330">
+            <img src="{% static 'pools/jpg/ангар.jpg' %}" alt="" width="330">
             Компания была основана в 2002 году тремя коллегами по цеху:
             Мэтвэй Энтонич, Бибо Бибыч, Женя РОВНЫЙ. Предприятие до 2008 года представляло из себя деревенский подвал
             (числен. рабочих 15 чел.), до 2015 года - околомкадный гараж (числен. рабочих 30 чел.), а сейчас -
@@ -61,8 +22,7 @@
     </div>
     <div class="headers2">
         <span class="headers">Деятельность</span>
-        <div class="headers_hover"><p class="headers_content"><img src="{% static 'pools/img/шестерни.jpg' %}" alt=""
-                                                                   width="330">
+        <div class="headers_hover"><p class="headers_content"><img src="{% static 'pools/jpg/шестерни.jpg' %}" alt="" width="330">
             Компания занимается производством зубчатых колёс, реек,
             червячных пар точно по всем требованиям и чертежу клиента в соответствии с ГОСТ и международными
             стандартами.</p>
@@ -72,9 +32,9 @@
         <span class="headers">Партнёры</span>
         <div class="headers_hover">
             <ul class="headers_links">
-                <img src="{% static 'pools/img/Данил.jpg' %}" alt="" height="250" width="200">
+                <img src="{% static 'pools/jpg/Данил.jpg' %}" alt="" height="250" width="200">
                 <li><a href="https://vk.com/7gamess" class="link">Главный прораб соседней стройки</a></li>
-                <img src="{% static 'pools/img/Богдан.jpg' %}" alt="" height="250" width="200">
+                <img src="{% static 'pools/jpg/Богдан.jpg' %}" alt="" height="250" width="200">
                 <li><a href="https://vk.com/direkc" class="link">Богом данный фитнес-тренер</a></li>
             </ul>
         </div>
@@ -85,63 +45,55 @@
     <div class="products">
         <div class="gears1">
             <a href="/gears/" style="color: #050a00;">Зубчатые передачи</a>
-            <img src="{% static 'pools/img/Gears_animation.gif' %}" alt="" height="300">
+            <img src="{% static 'pools/gif/Gears_animation.gif' %}" alt="" height="300">
         </div>
         <div class="gears2">
             <a href="/rack_neck/" style="color: #050a00;">Реечные передачи</a>
-            <img src="{% static 'pools/img/Rack_and_pinion_animation.gif' %}" alt="" height="300">
+            <img src="{% static 'pools/gif/Rack_and_pinion_animation.gif' %}" alt="" height="300">
         </div>
         <div class="gears3">
             <a href="/worm_gears/" style="color: #050a00;">Червячные передачи</a>
-            <img src="{% static 'pools/img/Worm_Gear.gif' %}" alt="" height="300">
+            <img src="{% static 'pools/gif/Worm_Gear.gif' %}" alt="" height="300">
         </div>
     </div>
 {% endblock %}
 </body>
 <footer class="footer">
     <h1 class="footer_name">Контакты основателей:</h1>
-    <svg class="footer_logo">`
-        <use href="#gear"></use>
-    </svg>
+    <img src="{% static 'pools/svg/gear-custom.svg' %}" class="footer_logo">
     <p class="rights">GEARS DYNAMICS, 2023, Все права нагло скомммуниженны</p>
     <div class="matvey">
         <h2>Мэтвэй Энтонич</h2>
-        <img src="{% static 'pools/img/Матвей.jpg' %}" alt="" height="235" width="188">
+        <img src="{% static 'pools/jpg/Матвей.jpg' %}" alt="" height="235" width="188">
         <div class="under_matvey">
             <a href="tel:89995850739">8-(999)-585-07-39</a>
             <form action="https://t.me/matwill_00">
                 <button class="button_tg">
-                    <svg class="icon_tg">
-                        <use href="#tg"></use>
-                    </svg>
+                    <img src="{% static 'pools/svg/telegram-custom.svg' %}" class="icon_tg">
                 </button>
             </form>
         </div>
     </div>
     <div class="bebo">
         <h2>Бибо Бибыч</h2>
-        <img src="{% static 'pools/img/Бибо.jpg' %}" alt="" height="235" width="188">
+        <img src="{% static 'pools/jpg/Бибо.jpg' %}" alt="" height="235" width="188">
         <div class="under_bebo">
             <a href="tel:89094852739">8-(909)-485-27-39</a>
             <form action="https://t.me/abanoob">
                 <button class="button_tg">
-                    <svg class="icon_tg">
-                        <use href="#tg"></use>
-                    </svg>
+                    <img src="{% static 'pools/svg/telegram-custom.svg' %}" class="icon_tg">
                 </button>
             </form>
         </div>
     </div>
     <div class="zheka">
         <h2>Женя РОВНЫЙ</h2>
-        <img src="{% static 'pools/img/Женя.jpg' %}" alt="" height="235" width="188">
+        <img src="{% static 'pools/jpg/Женя.jpg' %}" alt="" height="235" width="188">
         <div class="under_zheka">
             <a href="tel:89194852729">8-(919)-485-27-29</a>
             <form action="https://t.me/eugene0377">
                 <button class="button_tg">
-                    <svg class="icon_tg">
-                        <use href="#tg"></use>
-                    </svg>
+                    <img src="{% static 'pools/svg/telegram-custom.svg' %}" class="icon_tg">
                 </button>
             </form>
         </div>
