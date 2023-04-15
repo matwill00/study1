@@ -16,3 +16,7 @@ def rack_neck(request):
 
 def worm_gears(request):
     return render(request, 'worm_gears.html', {})
+
+
+def check(request):
+    return render(request, 'check.html', {})

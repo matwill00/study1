@@ -1,6 +1,16 @@
+* {
+    margin: 0;
+}
+.icon_arrow {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
 
 .header {
-    background: #557338;
+    background: #050a00;
     height: 100%;
     width: 100%;
     display: flex;
@@ -15,7 +25,7 @@
     height: 400px;
     width: 100%;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
 }
 
 .body_content {
@@ -36,7 +46,7 @@
 }
 
 .Name {
-    top: 20px;
+    top: 50px;
     position: relative;
     cursor: default;
     font-family: serif;
@@ -94,7 +104,7 @@
     position: relative;
     left: -60px;
     z-index: 2;
-    top: -32px;
+    top: -29px;
 }
 
 .headers2:hover .headers_hover {
@@ -102,7 +112,7 @@
     position: relative;
     left: -40px;
     z-index: 2;
-    top: -32px;
+    top: -29px;
 }
 
 .headers3:hover .headers_hover {
@@ -111,16 +121,17 @@
     z-index: 2;
     width: 250px;
     left: -30px;
-    top: -10px;
+    top: -8px;
     padding: 100% 0;
 }
 
 .headers {
+    display: flex;
+    flex-flow: row;
     position: relative;
     cursor: pointer;
     font-family: serif;
     font-style: normal;
-    display: inline-block;
     transition: transform .8s ease-in-out;
     color: #35f306;
     font-weight: 400;
@@ -219,12 +230,12 @@ a:hover {
 
 .footer_name {
     position: relative;
-    top: -20px;
 }
 
 .matvey {
     position: relative;
-    top: 20px;
+    height: 250px;
+    top: 70px;
     left: -300px;
     display: flex;
     flex-flow: column;
@@ -233,7 +244,7 @@ a:hover {
 .under_matvey {
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     font-size: 20px;
 }
 
@@ -243,7 +254,8 @@ a:hover {
 
 .bebo {
     position: relative;
-    top: 20px;
+    height: 250px;
+    top: 70px;
     left: -120px;
     display: flex;
     flex-flow: column;
@@ -252,13 +264,14 @@ a:hover {
 .under_bebo {
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     font-size: 20px;
 }
 
 .zheka {
     position: relative;
-    top: 20px;
+    height: 250px;
+    top: 70px;
     left: 50px;
     display: flex;
     flex-flow: column;
@@ -267,17 +280,10 @@ a:hover {
 .under_zheka {
     position: relative;
     display: flex;
-    flex-flow: row nowrap;
+    flex-flow: row;
     font-size: 20px;
 }
 
-.footer_logo {
-    position: absolute;
-    right: 10px;
-    bottom: 30px;
-    width: 300px;
-    height: 300px;
-}
 
 .rights {
     position: absolute;

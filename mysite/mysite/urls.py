@@ -22,4 +22,5 @@ urlpatterns = [
     path('gears/', index.gears),
     path('rack_neck/', index.rack_neck),
     path('worm_gears/', index.worm_gears),
+    path('check/', index.check),
 ]
