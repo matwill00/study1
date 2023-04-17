@@ -1,6 +1,7 @@
 * {
     margin: 0;
 }
+
 .icon_arrow {
     height: 30px;
     width: 30px;
@@ -284,9 +285,39 @@ a:hover {
     font-size: 20px;
 }
 
+.resume {
+    position: relative;
+    height: 250px;
+    font-size: 23px;
+    left: 100px;
+    display: flex;
+    flex-flow: column;
+}
+
+.under_resume {
+    position: relative;
+    display: flex;
+    flex-flow: column;
+    font-size: 20px;
+}
 
 .rights {
     position: absolute;
     right: 15px;
     bottom: 1px;
+}
+
+.gear_order {
+    display: flex;
+    flex-flow: column;
+}
+
+.gear_order2 {
+    display: flex;
+    flex-flow: row;
+}
+
+.order_form {
+    display: flex;
+    flex-flow: column;
 }

@@ -1,7 +1,22 @@
 {% extends 'index.html' %}
+{% load static %}
 {% block title %}Зубчатые передачи{% endblock %}
 {% block body %}
-    <div class="body_content">
-    что-то про зубчатые колёса
+    <body class="body_content">
+    <div class="gear_order">
+        <h1>Заказать зубчатое колесо:</h1>
+        <div class="gear_order2">
+            <form action="gear_order/" method="post" class="order_form">
+                {% csrf_token %}
+                <input name="client_name" type="text" placeholder="ФИО заказчика">
+                <input name="client_email" type="text" placeholder="Эл. почта заказчика">
+                <input name="order_name" type="text" placeholder="Наименование заказа">
+                <p>Вставить файл чертежа:</p>
+                <input name="order_drawing" type="file">
+                <button type="submit">Отправить заказ</button>
+            </form>
+            <img src="{% static 'pools/gif/Gears_animation.gif' %}">
+        </div>
     </div>
+    </body>
 {% endblock %}

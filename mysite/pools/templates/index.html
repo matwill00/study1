@@ -12,7 +12,7 @@
     <div class="headers1">
         <span class="headers">
             Создание
-            <img src="{% static 'pools/svg/arrow-down-square-fill-custom.svg' %}" class="icon_arrow">
+            <img src="{% static 'pools/svg/arrow-bar-down-custom.svg' %}" class="icon_arrow">
         </span>
         <div class="headers_hover"><p class="headers_content">
             <img src="{% static 'pools/jpg/ангар.jpg' %}" alt="" width="330">
@@ -26,7 +26,7 @@
     <div class="headers2">
         <span class="headers">
             Деятельность
-            <img src="{% static 'pools/svg/arrow-down-square-fill-custom.svg' %}" class="icon_arrow">
+            <img src="{% static 'pools/svg/arrow-bar-down-custom.svg' %}" class="icon_arrow">
         </span>
         <div class="headers_hover"><p class="headers_content"><img src="{% static 'pools/jpg/шестерни.jpg' %}" alt=""
                                                                    width="330">
@@ -38,7 +38,7 @@
     <div class="headers3">
         <span class="headers">
             Партнёры
-            <img src="{% static 'pools/svg/arrow-down-square-fill-custom.svg' %}" class="icon_arrow">
+            <img src="{% static 'pools/svg/arrow-bar-down-custom.svg' %}" class="icon_arrow">
         </span>
         <div class="headers_hover">
             <ul class="headers_links">
@@ -104,6 +104,18 @@
                 <button class="button_tg">
                     <img src="{% static 'pools/svg/telegram-custom.svg' %}" class="icon_tg">
                 </button>
+            </form>
+        </div>
+    </div>
+    <div class="resume">
+        <h2>Стать частью нашей шарашки:</h2>
+        <div>
+            <form action="resume/" method="post" class="under_resume">
+                {% csrf_token %}
+                <input name="name" type="text" placeholder="ФИО">
+                <input name="email" type="text" placeholder="Эл. почта">
+                <textarea name="resume" placeholder="Расскажи, какой ты крутой(ая)"></textarea>
+                <button type="submit">Отправить</button>
             </form>
         </div>
     </div>

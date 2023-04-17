@@ -23,4 +23,6 @@ urlpatterns = [
     path('rack_neck/', index.rack_neck),
     path('worm_gears/', index.worm_gears),
     path('check/', index.check),
+    path('resume/', index.resume),
+    path('gears/gear_order/', index.gear_order),
 ]
