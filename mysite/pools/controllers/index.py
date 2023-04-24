@@ -38,6 +38,6 @@ def gear_order(request):
     gear_order.client_name = request.POST.get("client_name")
     gear_order.client_email = request.POST.get("client_email")
     gear_order.order_name = request.POST.get("order_name")
-    gear_order.order_drawing = request.POST.get('order_drawing')
+    gear_order.order_drawing = request.FILES['order_drawing']
     gear_order.save()
     return redirect('/')

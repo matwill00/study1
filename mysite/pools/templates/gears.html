@@ -6,14 +6,14 @@
     <div class="gear_order">
         <h1>Заказать зубчатое колесо:</h1>
         <div class="gear_order2">
-            <form action="gear_order/" method="post" class="order_form">
+            <form action="gear_order/" method="post" class="order_form" enctype="multipart/form-data">
                 {% csrf_token %}
                 <input name="client_name" type="text" placeholder="ФИО заказчика">
                 <input name="client_email" type="text" placeholder="Эл. почта заказчика">
                 <input name="order_name" type="text" placeholder="Наименование заказа">
                 <p>Вставить файл чертежа:</p>
-                <input name="order_drawing" type="file">
-                <button type="submit">Отправить заказ</button>
+                <input name="order_drawing" type="file" >
+                <input type="submit" value="Отправить">
             </form>
             <img src="{% static 'pools/gif/Gears_animation.gif' %}">
         </div>
