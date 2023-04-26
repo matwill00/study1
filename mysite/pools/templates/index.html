@@ -70,7 +70,8 @@
 {% endblock %}
 <footer class="footer">
     <h1 class="footer_name">Контакты основателей:</h1>
-    <p class="rights">GEARS DYNAMICS, 2023, Все права нагло скомммуниженны</p>
+    <div class="rights"> <img src="{% static 'pools/svg/gear-custom.svg' %}" class="icon_footer">
+        GEARS DYNAMICS, 2023, Все права нагло скомммуниженны</div>
     <div class="matvey">
         <h2>Мэтвэй Энтонич</h2>
         <img src="{% static 'pools/jpg/Матвей.jpg' %}" alt="" height="235" width="188">
@@ -112,10 +113,10 @@
         <div>
             <form action="resume/" method="post" class="under_resume">
                 {% csrf_token %}
-                <input name="name" type="text" placeholder="ФИО">
-                <input name="email" type="text" placeholder="Эл. почта">
-                <textarea name="resume" placeholder="Расскажи, какой ты крутой(ая)"></textarea>
-                <button type="submit">Отправить</button>
+                <input name="name" type="text" placeholder="ФИО" class="input_footer">
+                <input name="email" type="text" placeholder="Эл. почта" class="input_footer">
+                <textarea name="resume" placeholder="Расскажи, какой ты крутой(ая)" class="input_footer"></textarea>
+                <button type="submit" class="input_footer">Отправить</button>
             </form>
         </div>
     </div>

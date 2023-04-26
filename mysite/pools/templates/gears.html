@@ -3,20 +3,20 @@
 {% block title %}Зубчатые передачи{% endblock %}
 {% block body %}
     <body class="body_content">
-    <div class="gear_order">
+    <div class="order">
         <h1>Заказать зубчатое колесо:</h1>
-        <div class="gear_order2">
+        <div class="order2">
             <form action="gear_order/" method="post" class="order_form" enctype="multipart/form-data">
                 {% csrf_token %}
-                <input name="client_name" type="text" placeholder="ФИО заказчика">
-                <input name="client_email" type="text" placeholder="Эл. почта заказчика">
-                <input name="order_name" type="text" placeholder="Наименование заказа">
+                <input name="client_name" type="text" placeholder="ФИО заказчика" class="input_order">
+                <input name="client_email" type="text" placeholder="Эл. почта заказчика" class="input_order">
+                <input name="order_name" type="text" placeholder="Наименование заказа" class="input_order">
                 <p>Вставить файл чертежа:</p>
-                <input name="order_drawing" type="file" >
-                <input type="submit" value="Отправить">
+                <input name="order_drawing" type="file" class="input_order">
+                <input type="submit" value="Отправить" class="input_order">
             </form>
-            <img src="{% static 'pools/gif/Gears_animation.gif' %}">
         </div>
     </div>
+    <img src="{% static 'pools/gif/Gears_animation.gif' %}" height="400"  class="order_pic">
     </body>
 {% endblock %}

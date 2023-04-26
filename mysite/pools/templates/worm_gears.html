@@ -1,7 +1,22 @@
 {% extends 'index.html' %}
+{% load static %}
 {% block title %}Червячные передачи{% endblock %}
 {% block body %}
     <body class="body_content">
-    что-то про червячные механизмы
+    <div class="order">
+        <h1>Заказать червяка:</h1>
+        <div class="order2">
+            <form action="worm_gear_order/" method="post" class="order_form" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input name="client_name" type="text" placeholder="ФИО заказчика" class="input_order">
+                <input name="client_email" type="text" placeholder="Эл. почта заказчика" class="input_order">
+                <input name="order_name" type="text" placeholder="Наименование заказа" class="input_order">
+                <p>Вставить файл чертежа:</p>
+                <input name="order_drawing" type="file" class="input_order">
+                <input type="submit" value="Отправить" class="input_order">
+            </form>
+        </div>
+    </div>
+    <img src="{% static 'pools/gif/Worm_Gear.gif' %}" height="400" class="order_pic">
     </body>
 {% endblock %}

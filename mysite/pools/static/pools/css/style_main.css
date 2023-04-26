@@ -295,6 +295,7 @@ a:hover {
 }
 
 .under_resume {
+    top: 30px;
     position: relative;
     display: flex;
     flex-flow: column;
@@ -303,21 +304,86 @@ a:hover {
 
 .rights {
     position: absolute;
+    display: flex;
+    flex-flow: column;
     right: 15px;
     bottom: 1px;
 }
 
-.gear_order {
-    display: flex;
-    flex-flow: column;
+.icon_footer {
+    position: relative;
+    left: 230px;
+    height: 200px;
+    width: 200px;
 }
 
-.gear_order2 {
+.order {
+    position: relative;
+    left: 50px;
+    top: 100px;
+    display: flex;
+    flex-flow: column;
+    width: 500px;
+}
+
+.order_pic {
+    position: absolute;
+    left: 600px;
+    top: 130px;
+}
+
+.order2 {
     display: flex;
     flex-flow: row;
+    width: 500px;
 }
 
 .order_form {
     display: flex;
     flex-flow: column;
+    width: 500px;
+}
+
+.input_footer {
+    color: black;
+    background-color: #35f306;
+    border-color: black;
+}
+
+.input_order {
+    color: #35f306;
+    background-color: black;
+    border-color: #35f306;
+}
+
+.input_footer::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: black;
+    opacity: 1; /* Firefox */
+}
+
+.input_footer:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: black;
+}
+
+.input_footer::-ms-input-placeholder { /* Microsoft Edge */
+    color: black;
+}
+
+.input_order::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #35f306;
+    opacity: 1; /* Firefox */
+}
+
+.input_order:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #35f306;
+}
+
+.input_order::-ms-input-placeholder { /* Microsoft Edge */
+    color: #35f306;
+}
+
+.input_order::file-selector-button {
+    color: #35f306;
+    background-color: black;
+    border-color: #35f306;
 }

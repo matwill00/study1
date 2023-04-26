@@ -26,4 +26,6 @@ urlpatterns = [
     path('check/', index.check),
     path('resume/', index.resume),
     path('gears/gear_order/', index.gear_order),
+    path('rack_neck/rack_neck_order/', index.rack_neck_order),
+    path('worm_gears/worm_gear_order/', index.worm_gear_order),
 ]
